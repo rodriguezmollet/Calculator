@@ -1,0 +1,22 @@
+---
+BasedOnStyle: Microsoft
+Language: Cpp
+
+IncludeBlocks: Preserve
+
+UseTab: Never
+IndentWidth: 4
+IndentCaseLabels: true
+ContinuationIndentWidth: 4
+NamespaceIndentation: All
+AccessModifierOffset: -4
+
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AlwaysBreakTemplateDeclarations: 'Yes'
+
+AlignAfterOpenBracket: DontAlign
+SpaceBeforeCpp11BracedList: true
+
+AlignTrailingComments: false
+PointerAlignment: Left

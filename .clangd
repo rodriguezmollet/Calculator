@@ -1,0 +1,27 @@
+CompileFlags:
+  Add:
+    - "-xc++"
+    - "-std=c++20"
+
+Index:
+  # Build a type + incoming reference index in the background
+  Background: Build
+
+Diagnostics:
+  # https://clang.llvm.org/extra/clang-tidy/
+  ClangTidy:
+    Add:
+      # Checks that target bugprone code constructs.
+      - bugprone*
+      # Clang Static Analyzer checks.
+      - clang-analyze*
+      # Checks related to concurrent programming (including threads, fibers, coroutines, etc.).
+      - concurrency*
+      # Checks related to C++ Core Guidelines.
+      - cppcoreguidelines*
+      # Checks that target performance-related issues.
+      - performance*
+      # Checks that target portability-related issues that don't relate to any particular coding style.
+      - portability*
+      # Checks that target readability-related issues that don't relate to any particular coding style.
+      - readability*
